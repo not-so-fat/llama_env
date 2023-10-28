@@ -1,0 +1,11 @@
+numpy
+scipy
+scikit-learn
+conjurer
+jedi==0.17.2
+pyarrow
+eli5
+fasttreeshap
+networkx
+graphviz
+plotly

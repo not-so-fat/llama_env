@@ -1,0 +1,9 @@
+import logging
+logger = logging.getLogger()
+logger.setLevel(logging.INFO)
+logger.addHandler(logging.StreamHandler())
+
+import pandas 
+pandas.set_option("display.max_columns", 500)
+pandas.set_option("display.max_rows", 100)
+pandas.set_option("display.max_colwidth", 500)
