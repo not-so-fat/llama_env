@@ -8,4 +8,5 @@ eli5
 fasttreeshap
 networkx
 graphviz
-plotly
+langchain
+langchain-community

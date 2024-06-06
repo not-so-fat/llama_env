@@ -1,0 +1,19 @@
+version: '3'
+services:
+  notebook:
+    build:
+      context: ./notebook_docker
+    ports: 
+      - "8888:8888"
+    volumes:
+      - C:\Users\yusuk\workspace\notebooks:/home/neo/notebook_workspace
+    depends_on:
+      - llama 
+  llama:
+    build:
+      context: ./llama
+    expose:
+      - "11434"
+    restart: always
+    ports:
+      - "11434:11434"
